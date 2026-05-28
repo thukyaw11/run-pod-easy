@@ -17,7 +17,7 @@ RUN ldconfig /usr/local/cuda-12.1/compat/
 RUN python3 -m pip install --no-cache-dir --upgrade pip
 RUN python3 -m pip install --no-cache-dir \
     --index-url https://download.pytorch.org/whl/cu121 \
-    torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.1
+    torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1
 
 # Then install the rest
 COPY requirements.txt /requirements.txt
