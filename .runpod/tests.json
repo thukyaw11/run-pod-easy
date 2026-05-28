@@ -32,12 +32,12 @@
     }
   ],
   "config": {
-    "gpuTypeId": "NVIDIA GeForce RTX 3090",
+    "gpuTypeId": "NVIDIA RTX A4500",
     "gpuCount": 1,
     "env": [
       {
         "key": "READER_LANGS",
-        "value": "ch_sim,en"
+        "value": "th,en"
       }
     ],
     "allowedCudaVersions": [
