@@ -4,7 +4,7 @@
       "name": "ocr_single_pdf",
       "input": {
         "file_url": "https://arxiv.org/pdf/1708.01204.pdf",
-        "languages": ["ch_sim", "en"],
+        "languages": ["th", "en"],
         "gpu": true,
         "dpi": 150
       },
@@ -32,7 +32,7 @@
     }
   ],
   "config": {
-    "gpuTypeId": "NVIDIA RTX A4500",
+    "gpuTypeId": "NVIDIA GeForce RTX 3090",
     "gpuCount": 1,
     "env": [
       {
