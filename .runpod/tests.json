@@ -32,7 +32,7 @@
     }
   ],
   "config": {
-    "gpuTypeId": "NVIDIA RTX A4500",
+    "gpuTypeId": "NVIDIA GeForce RTX 3090",
     "gpuCount": 1,
     "env": [
       {
