@@ -28,7 +28,7 @@
         "file_url": "https://arxiv.org/pdf/1708.01204.pdf",
         "dpi": 150
       },
-      "timeout": 300000
+      "timeout": 600000
     }
   ],
   "config": {
