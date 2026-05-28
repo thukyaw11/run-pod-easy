@@ -8,7 +8,7 @@
         "gpu": true,
         "dpi": 150
       },
-      "timeout": 600000
+      "timeout": 800000
     },
     {
       "name": "ocr_explicit_action",
