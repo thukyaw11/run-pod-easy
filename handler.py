@@ -101,7 +101,7 @@ def _build_page_text(results: List[Any]) -> str:
     return "\n".join(r[1] for r in sorted_results if r[1].strip())
 
 
-def handler(job):
+async def handler(job):
     """
     action = "ocr" (default):
       Input:  { "file_url": "...", "languages": ["ch_sim","en"], "gpu": true, "dpi": 200 }
@@ -167,4 +167,5 @@ def handler(job):
             return
 
 
-runpod.serverless.start({"handler": handler})
+if __name__ == "__main__":
+    runpod.serverless.start({"handler": handler, "return_aggregate_stream": True})

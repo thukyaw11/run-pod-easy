@@ -8,7 +8,7 @@
         "gpu": true,
         "dpi": 150
       },
-      "timeout": 120000
+      "timeout": 600000
     },
     {
       "name": "ocr_explicit_action",
@@ -19,7 +19,7 @@
         "gpu": true,
         "dpi": 150
       },
-      "timeout": 180000
+      "timeout": 600000
     },
     {
       "name": "detect_orientation",
@@ -28,11 +28,11 @@
         "file_url": "https://arxiv.org/pdf/1708.01204.pdf",
         "dpi": 150
       },
-      "timeout": 120000
+      "timeout": 300000
     }
   ],
   "config": {
-    "gpuTypeId": "NVIDIA GeForce RTX 4090",
+    "gpuTypeId": "NVIDIA RTX A4500",
     "gpuCount": 1,
     "env": [
       {
