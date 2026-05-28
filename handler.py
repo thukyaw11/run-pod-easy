@@ -43,7 +43,11 @@ def get_reader(languages: List[str], use_gpu: bool, cudnn_benchmark: bool = Fals
 
 def _fetch_pdf(job_input: dict) -> bytes:
     if "file_url" in job_input:
-        with urllib.request.urlopen(job_input["file_url"]) as r:
+        req = urllib.request.Request(
+            job_input["file_url"],
+            headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"},
+        )
+        with urllib.request.urlopen(req) as r:
             return r.read()
     if "file_base64" in job_input:
         return base64.b64decode(job_input["file_base64"])
